@@ -9,11 +9,7 @@ echo "please enter the subject"
 read subject
 echo "please enter the message body"
 read body
-for ((i=0;i<$number;i++));
+for i in $(seq 0 4)
 do
-sendmail $email
-FROM: $address
-SUBJECT: $subject
-$body
-.
+sendmail $email -f $address $body 
 done
