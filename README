@@ -1,0 +1,3 @@
+This applicaiton depends on a built in email server on linux.
+It will ask the user to input a number of emails to send, with
+them being able to customize the contents on each email.
